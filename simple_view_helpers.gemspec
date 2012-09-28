@@ -7,11 +7,11 @@ require "simple_view_helpers/version"
 Gem::Specification.new do |s|
   s.name        = "simple_view_helpers"
   s.version     = SimpleViewHelpers::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of SimpleViewHelpers."
-  s.description = "TODO: Description of SimpleViewHelpers."
+  s.authors     = ["Joshua Muheim"]
+  s.email       = ["josh@example.com"]
+  s.homepage    = "www.muheimwebdesign.ch"
+  s.summary     = "Some useful HTML generating view helpers."
+  s.description = "So far, we are excited to offer you the fieldset helper. More to come soon!"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 

@@ -1,4 +1,6 @@
 <fieldset>
-  <legend><%= legend %></legend>
+  <% if legend %>
+    <legend><%= legend %></legend>
+  <% end %>
   <%= block %>
 </fieldset>

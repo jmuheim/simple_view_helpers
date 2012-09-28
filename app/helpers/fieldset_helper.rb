@@ -1,6 +1,6 @@
 module FieldsetHelper
-  def fieldset(legend, &block)
-    render partial: 'fieldset', locals: {
+  def fieldset(legend = nil, &block)
+    render partial: 'simple_view_helpers/fieldset', locals: {
       legend: legend,
       block: capture(&block),
     }

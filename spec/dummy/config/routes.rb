@@ -1,4 +1,6 @@
 Dummy::Application.routes.draw do
+  get "general/fieldset"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

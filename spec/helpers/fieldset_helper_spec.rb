@@ -1,15 +1,27 @@
 require 'spec_helper'
 
-# Specs in this file have access to a helper object that includes
-# the FieldsetHelper. For example:
-#
-# describe FieldsetHelper do
-#   describe "string concat" do
-#     it "concats two strings with spaces" do
-#       helper.concat_strings("this","that").should == "this that"
-#     end
-#   end
-# end
 describe FieldsetHelper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "#fieldset" do
+    context "with caption" do
+      let(:html) { helper.fieldset('This is the caption') { 'This is the <em>block</em>!'.html_safe } }
+      subject { html }
+      
+      it "should generate a fieldset with a legend" do
+        should have_selector('fieldset > legend')
+        should have_selector('fieldset > em')
+        should have_content('This is the block!')
+      end
+    end
+    
+    context "without caption" do
+      let(:html) { helper.fieldset { 'This is the <em>block</em>!'.html_safe } }
+      subject { html }
+      
+      it "should generate a fieldset without a legend" do
+        should_not have_selector('fieldset > legend')
+        should     have_selector('fieldset > em')
+        should     have_content('This is the block!')
+      end
+    end
+  end
 end
