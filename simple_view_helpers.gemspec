@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = SimpleViewHelpers::VERSION
   s.authors     = ["Joshua Muheim"]
   s.email       = ["josh@example.com"]
-  s.homepage    = "www.muheimwebdesign.ch"
+  s.homepage    = "http://www.muheimwebdesign.ch"
   s.summary     = "Some useful HTML generating view helpers."
   s.description = "So far, we are excited to offer you the fieldset helper. More to come soon!"
 
