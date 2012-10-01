@@ -1,3 +1,6 @@
 = SimpleViewHelpers
 
-This project rocks and uses MIT-LICENSE.
+This is an example Rails 3.1 engine for my blog posts:
+
+- {How to Develop Rails 3.1 Engines with Ease: Part I – The engine}[http://lsd4coders.muheimwebdesign.ch/2012/09/how-to-develop-rails-3-1-engines-with-ease-part-i-the-engine/]
+- {How to Develop Rails 3.1 Engines with Ease: Part II - The gem}[http://lsd4coders.muheimwebdesign.ch/2012/09/how-to-develop-rails-3-1-engines-with-ease-part-ii-the-gem/]
